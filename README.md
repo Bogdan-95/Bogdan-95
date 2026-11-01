@@ -1,35 +1,57 @@
-# Привет, я Богдан 👋
-### Python Backend Developer
+# Богдан Реньго
 
-Разработал 5 собственных Python-проектов с REST API, очередями задач, интеграциями и CLI. Специализируюсь на асинхронности, FastAPI и работе с базами данных. Ищу Trainee / Junior Backend-позицию, где смогу расти под руководством опытных коллег.
+### Junior Python Backend Developer
 
-## 🛠 Мой стек
-* **Язык:** Python 3.11–3.12 (OOP, type hints, asyncio)
-* **Backend:** FastAPI, REST API, Pydantic, aiogram 3
-* **Базы данных:** PostgreSQL, SQLite, SQLAlchemy 2.0, Alembic
-* **Инфраструктура:** Docker, Docker Compose, Linux, Bash, Git, GitHub Actions
-* **Тестирование:** pytest, unittest.mock, Ruff, Black
+Разрабатываю Backend-приложения на Python: REST API, фоновые задачи, интеграции с внешними сервисами и работу с PostgreSQL.
 
-## 🚀 Избранные проекты
-*(Ссылки кликабельны, если проект закреплен ниже)*
+Ищу первую коммерческую позицию **Junior Python Backend Developer** или **Trainee Python Developer**.
 
-* **Content Factory** — REST API и очередь генерации изображений. Защита от повторного захвата задач через `SELECT ... FOR UPDATE SKIP LOCKED`, асинхронный воркер, Docker, CI.
-* **Quote Showcase** — FastAPI-сервис каталога цитат. Обработка файлов до 110 МБ потоковым парсером, LRU-кэш с TTL и `asyncio.Lock`.
-* **Speed Measurer** — CLI для измерения скорости загрузки. 28 unit-тестов без реальной сети, обработка 7 типов ошибок.
+## Избранные проекты
 
-📫 **Как со мной связаться:** [Telegram](https://t.me/bodya_95) | [Email](mailto:b95rengo@gmail.com)
+### [Content Factory Console](https://github.com/Bogdan-95/content-factory-console)
 
-<!--
-**Bogdan-95/Bogdan-95** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+REST API и очередь задач генерации изображений с отдельным Worker.
 
-Here are some ideas to get you started:
+**Python 3.12 · FastAPI · PostgreSQL · SQLAlchemy · Alembic · Docker**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Очередь задач на PostgreSQL без Redis/Celery.
+- Конкурентный захват через `SELECT ... FOR UPDATE SKIP LOCKED`.
+- Разделение API и Worker.
+- Миграции Alembic, интеграционные тесты и GitHub Actions.
+
+### [Quote Showcase](https://github.com/Bogdan-95/quote-showcase)
+
+Асинхронная in-memory витрина цитат с потоковым импортом и кэшированием.
+
+**Python · FastAPI · asyncio · LRU · TTL · Docker**
+
+- Потоковый приём больших JSON-снимков.
+- LRU-кэш с ограничением по размеру и TTL.
+- Single Flight для объединения конкурентных запросов.
+- Unit-тесты и CI.
+
+### [Internet Speed Measurer](https://github.com/Bogdan-95/internet-speed-measurer)
+
+CLI-утилита для измерения скорости HTTP-загрузки.
+
+**Python · urllib · argparse · unittest · Mock**
+
+- Потоковое чтение HTTP-ответов.
+- Обработка сетевых ошибок и таймаутов.
+- Unit-тесты без реальных внешних запросов.
+- Реализация на стандартной библиотеке Python.
+
+## Технологии
+
+- **Язык:** Python 3.11–3.12, OOP, Type Hints, asyncio
+- **Backend:** FastAPI, REST API, Pydantic, aiogram
+- **Базы данных:** PostgreSQL, SQLite, SQLAlchemy 2.0, Alembic
+- **Инфраструктура:** Docker, Docker Compose, Linux, Bash
+- **Качество:** Pytest, unittest, unittest.mock, Ruff, Git, GitHub Actions
+
+## Контакты
+
+- [GitHub](https://github.com/Bogdan-95)
+- [Портфолио и резюме](https://bogdan-95.github.io/my_business_card/)
+- [Telegram](https://t.me/bodya_95)
+- [Email](mailto:b95rengo@gmail.com)
