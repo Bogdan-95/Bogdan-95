@@ -1,57 +1,62 @@
 # Богдан Реньго
 
-### Junior Python Backend Developer
+### Python Backend Developer | FastAPI | PostgreSQL | SQLAlchemy | asyncio
 
-Разрабатываю Backend-приложения на Python: REST API, фоновые задачи, интеграции с внешними сервисами и работу с PostgreSQL.
+Разрабатываю Backend-приложения на Python, REST API и фоновые сервисы.
 
-Ищу первую коммерческую позицию **Junior Python Backend Developer** или **Trainee Python Developer**.
+Интересуюсь архитектурой Backend-систем, асинхронной обработкой, конкурентным доступом к данным и проектированием очередей задач.
 
-## Избранные проекты
+Ищу позицию **Trainee / Junior Python Backend Developer**.
+
+## Featured Projects
 
 ### [Content Factory Console](https://github.com/Bogdan-95/content-factory-console)
 
-REST API и очередь задач генерации изображений с отдельным Worker.
+REST API и система фоновой обработки задач генерации изображений.
 
-**Python 3.12 · FastAPI · PostgreSQL · SQLAlchemy · Alembic · Docker**
+**FastAPI · PostgreSQL · SQLAlchemy · Alembic · Docker**
 
-- Очередь задач на PostgreSQL без Redis/Celery.
-- Конкурентный захват через `SELECT ... FOR UPDATE SKIP LOCKED`.
-- Разделение API и Worker.
-- Миграции Alembic, интеграционные тесты и GitHub Actions.
+- Очередь задач на PostgreSQL.
+- Конкурентный захват заданий через `FOR UPDATE SKIP LOCKED`.
+- Отдельный Worker.
+- Docker Compose и GitHub Actions.
 
 ### [Quote Showcase](https://github.com/Bogdan-95/quote-showcase)
 
-Асинхронная in-memory витрина цитат с потоковым импортом и кэшированием.
+Асинхронный сервис каталога с потоковым импортом и ограниченным кэшем.
 
-**Python · FastAPI · asyncio · LRU · TTL · Docker**
+**FastAPI · asyncio · LRU · TTL · Streaming**
 
-- Потоковый приём больших JSON-снимков.
-- LRU-кэш с ограничением по размеру и TTL.
-- Single Flight для объединения конкурентных запросов.
-- Unit-тесты и CI.
+- Потоковая обработка больших JSON-снимков.
+- Ограничение потребления памяти.
+- Single Flight для конкурентных запросов.
+- Нагрузочные сценарии.
 
 ### [Internet Speed Measurer](https://github.com/Bogdan-95/internet-speed-measurer)
 
 CLI-утилита для измерения скорости HTTP-загрузки.
 
-**Python · urllib · argparse · unittest · Mock**
+**Python · urllib · unittest · Mock**
 
-- Потоковое чтение HTTP-ответов.
-- Обработка сетевых ошибок и таймаутов.
-- Unit-тесты без реальных внешних запросов.
-- Реализация на стандартной библиотеке Python.
+- Потоковое скачивание.
+- Обработка сетевых ошибок.
+- Unit-тесты без реальной сети.
+- Только стандартная библиотека Python.
 
-## Технологии
+## Tech Stack
 
-- **Язык:** Python 3.11–3.12, OOP, Type Hints, asyncio
-- **Backend:** FastAPI, REST API, Pydantic, aiogram
-- **Базы данных:** PostgreSQL, SQLite, SQLAlchemy 2.0, Alembic
-- **Инфраструктура:** Docker, Docker Compose, Linux, Bash
-- **Качество:** Pytest, unittest, unittest.mock, Ruff, Git, GitHub Actions
+**Language:** Python 3.11–3.12, OOP, Type Hints, asyncio
 
-## Контакты
+**Backend:** FastAPI, REST API, Pydantic, aiogram
 
-- [GitHub](https://github.com/Bogdan-95)
-- [Портфолио и резюме](https://bogdan-95.github.io/my_business_card/)
-- [Telegram](https://t.me/bodya_95)
-- [Email](mailto:b95rengo@gmail.com)
+**Databases:** PostgreSQL, SQLite, SQLAlchemy 2.0, Alembic
+
+**Infrastructure:** Docker, Docker Compose, Linux, Bash
+
+**Testing & Tools:** pytest, unittest, unittest.mock, Ruff, Git, GitHub Actions
+
+## Contacts
+
+- GitHub: https://github.com/Bogdan-95
+- Telegram: https://t.me/bodya_95
+- Email: b95rengo@gmail.com
